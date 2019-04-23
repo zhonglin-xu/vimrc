@@ -7,3 +7,9 @@
 [submodule "vim_runtime/plugins/nerdtree"]
 	path = vim_runtime/plugins/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim_runtime/plugins/lightline.vim"]
+	path = vim_runtime/plugins/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim_runtime/plugins/ack.vim"]
+	path = vim_runtime/plugins/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
