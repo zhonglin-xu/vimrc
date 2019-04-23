@@ -68,9 +68,9 @@ let g:NERDTreeWinSize=35
 let g:NERDTreeDirArrows=1
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
+map <leader>e :NERDTreeToggle<cr>
+"map <leader>nb :NERDTreeFromBookmark<Space>
+"map <leader>nf :NERDTreeFind<cr>
 
 " vim不指定具体文件打开是，自动使用nerdtree
  autocmd StdinReadPre * let s:std_in=1
