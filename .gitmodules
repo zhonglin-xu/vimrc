@@ -1,3 +1,9 @@
 [submodule "vim_runtime/plugins/bufexplorer"]
 	path = vim_runtime/plugins/bufexplorer
 	url = git@github.com:corntrace/bufexplorer.git
+[submodule "vim_runtime/plugins/mru.vim"]
+	path = vim_runtime/plugins/mru.vim
+	url = git@github.com:vim-scripts/mru.vim.git
+[submodule "vim_runtime/plugins/nerdtree"]
+	path = vim_runtime/plugins/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git

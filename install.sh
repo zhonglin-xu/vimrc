@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+rm -rf ~/.vim_runtime/*
+
 mkdir -p ~/.vim_runtime/
 
 cp -rf vim_runtime/* ~/.vim_runtime/
