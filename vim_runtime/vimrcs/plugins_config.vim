@@ -79,6 +79,17 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
 
+" vim不指定具体文件打开是，自动使用nerdtree
+ autocmd StdinReadPre * let s:std_in=1
+ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" 当vim打开一个目录时，nerdtree自动使用
+ autocmd StdinReadPre * let s:std_in=1
+ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" 当vim中没有其他文件，值剩下nerdtree的时候，自动关闭窗口
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-multiple-cursors
@@ -132,14 +143,6 @@ let g:lightline = {
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-go
@@ -172,5 +175,3 @@ let g:ale_lint_on_enter = 0
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-
-"let g:go_version_warning = 0
