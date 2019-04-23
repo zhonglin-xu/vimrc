@@ -13,3 +13,6 @@
 [submodule "vim_runtime/plugins/ack.vim"]
 	path = vim_runtime/plugins/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "vim_runtime/plugins/vim-fugitive"]
+	path = vim_runtime/plugins/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
