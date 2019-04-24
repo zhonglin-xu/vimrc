@@ -255,6 +255,12 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Always show the status line
 set laststatus=2
 
+""""""""""""""""""""""""""""""
+" => Tab line
+""""""""""""""""""""""""""""""
+" Only show the tab line when tab number > 1
+set showtabline=1
+
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
