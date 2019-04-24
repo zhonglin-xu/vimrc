@@ -163,8 +163,12 @@ let g:ale_lint_on_enter = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Git gutter (Git diff)
+" => Fugitive 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gitgutter_enabled=0
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
-
+"noremap <silent> <leader>gs :Gstatus<cr>
+"noremap <silent> <leader>gd :Gdiff<cr>
+"noremap <silent> <leader>gc :Gcommit<cr>
+"noremap <silent> <leader>gb :Gblame<cr>
+"nnoremap <silent> <leader>gl :Glog<cr>
+"noremap <silent> <leader>gp :Git push<cr>
+"noremap <silent> <leader>gw :Gwrite<cr>
