@@ -144,6 +144,16 @@ endif
 " Set utf8 as standard encoding and en_US as the standard language
 set termencoding=utf8
 set encoding=utf8
+set fileencodings=utf-8,chinese,latin-1
+
+if has("win32")
+    set fileencoding=chineseelse 
+    set fileencoding=utf-8endif
+    "解决菜单乱 "码
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+    "解决consle输 "出 "乱
+    language messages zh_CN.utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
