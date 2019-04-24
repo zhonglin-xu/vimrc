@@ -154,6 +154,7 @@ if has("win32")
     source $VIMRUNTIME/menu.vim
     "解决consle输 "出 "乱
     language messages zh_CN.utf-8
+endif
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
