@@ -36,9 +36,6 @@ set relativenumber
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 10 lines to the cursor - when moving vertically using j/k
-set so=10
-
 " Turn on the Wild menu
 set wildmenu
 
@@ -183,8 +180,8 @@ set shiftwidth=4
 set tabstop=4
 
 " Linebreak on 500 characters
-set lbr
-set tw=500
+"set lbr
+"set tw=500
 
 set ai "Auto indent
 set si "Smart indent
