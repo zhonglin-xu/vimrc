@@ -1,23 +1,19 @@
-# The Panda vimrc
+# The vimrc
 
 This is my vim configuration. 
 
 
-## How to installt on Linux or Mac? 
+## How to install on Linux or Mac? 
 
 	sh ./install.sh
 
 
 ## How to install on Windows?
 
-Use [gitforwindows](http://gitforwindows.org/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
+Use [git for windows](http://gitforwindows.org/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
 
-
-## Some screenshots
 
 ## Included Plugins
-
-I recommend reading the docs of these plugins to understand them better. Each plugin provides a much better Vim experience!
 
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for `the_silver_searcher` (ag) or ack -- a wicked fast grep
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with `<leader+o>`
