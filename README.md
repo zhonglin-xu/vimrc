@@ -5,12 +5,13 @@ This is my vim configuration.
 
 ## How to install on Linux or Mac? 
 
+	git clone --recurse-submodules git@github.com:zhonglin-xu.vimrc.git
 	sh ./install.sh
 
 
 ## How to install on Windows?
 
-Use [git for windows](http://gitforwindows.org/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
+Use [git for windows](http://gitforwindows.org/) to checkout the repository(include submodules) and run the installation instructions above. No special instructions needed ;-)
 
 
 ## Included Plugins
