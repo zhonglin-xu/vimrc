@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: Johnny Xu
+" Maintainer: Zhonglin Xu
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -117,7 +117,7 @@ if has("gui_running")
     set guioptions-=T
     set guioptions-=e
     set guioptions-=m
-    set guifont=Lucida_Console:h9
+    set guifont=Lucida_Console:h11
     set t_Co=256
     set guitablabel=%M\ %t
 endif
