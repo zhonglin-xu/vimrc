@@ -101,7 +101,7 @@ syntax enable
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
-    set font=Lucida_Console:h9
+    set font=Lucida_Console:h11
     set t_Co=256
 endif
 
