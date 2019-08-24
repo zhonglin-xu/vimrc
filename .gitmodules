@@ -22,3 +22,6 @@
 [submodule "vim_runtime/plugins/indentLine"]
 	path = vim_runtime/plugins/indentLine
 	url = git@github.com:Yggdroot/indentLine.git
+[submodule "vim_runtime/plugins/markdown-preview.nvim"]
+	path = vim_runtime/plugins/markdown-preview.nvim
+	url = git@github.com:iamcco/markdown-preview.nvim.git
