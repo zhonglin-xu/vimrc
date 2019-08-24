@@ -138,10 +138,19 @@ let g:lightline = {
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indentLine
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:indentLine_enabled = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Markdown Preview
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-go
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:go_fmt_command = "goimports"
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
@@ -165,10 +174,10 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fugitive 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"noremap <silent> <leader>gs :Gstatus<cr>
-"noremap <silent> <leader>gd :Gdiff<cr>
-"noremap <silent> <leader>gc :Gcommit<cr>
-"noremap <silent> <leader>gb :Gblame<cr>
-"nnoremap <silent> <leader>gl :Glog<cr>
-"noremap <silent> <leader>gp :Git push<cr>
-"noremap <silent> <leader>gw :Gwrite<cr>
+noremap <silent> <leader>gs :Gstatus<cr>
+noremap <silent> <leader>gd :Gdiff<cr>
+noremap <silent> <leader>gc :Gcommit<cr>
+noremap <silent> <leader>gb :Gblame<cr>
+nnoremap <silent> <leader>gl :Glog<cr>
+noremap <silent> <leader>gp :Git push<cr>
+noremap <silent> <leader>gw :Gwrite<cr>

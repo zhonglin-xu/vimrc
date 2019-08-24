@@ -88,6 +88,10 @@ if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
 endif
 
+if has("win32")
+    autocmd GUIEnter * sim ~x
+endif
+
 
 " Add a bit extra margin to the left
 set foldcolumn=1
@@ -301,6 +305,9 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
+
+source $VIMRUNTIME/delmenu.vim 
+source $VIMRUNTIME/menu.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Quick Run
