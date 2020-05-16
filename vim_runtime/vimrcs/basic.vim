@@ -49,7 +49,7 @@ set ruler
 " Height of the command bar
 set cmdheight=1
 
-" A buffer becomes hidden when it is abandoned
+" A buffer becomes hidden when it is abandoned, support switch buf when current one is not saved
 set hid
 
 " Configure backspace so it acts as it should act
@@ -57,7 +57,7 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " When searching try to be smart about cases 
-set smartcase
+set ignorecase
 
 " Highlight search results
 set hlsearch
@@ -209,7 +209,7 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
-map <leader>t  :tabnext 
+map <leader>t  :tabnext<cr>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -373,6 +373,8 @@ func! CompileRunGcc()
         exec "!python3 %"
     elseif &filetype == 'sh' 
         exec "!bash %"
+    elseif &filetype == 'go' 
+        exec "!go run %"
     endif
 endfunction
 
