@@ -59,10 +59,10 @@ Disable highlights when you press `<leader><cr>`:
 
 Smart way to move between windows (`<ctrl>j` etc.):
 	
-	map <C-j> <C-W>j
-	map <C-k> <C-W>k
-	map <C-h> <C-W>h
-	map <C-l> <C-W>l
+	map <leader>j <C-W>j
+	map <leader>k <C-W>k
+	map <leader>h <C-W>h
+	map <leader>l <C-W>l
 
 Closing of the current buffer(s) (`<leader>bd` and (`<leader>ba`)):
 	
